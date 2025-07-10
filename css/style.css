@@ -25,7 +25,6 @@ body {
     min-height: 100vh;
 }
 
-/* Header */
 header {
     background-color: var(--primary);
     color: #000;
@@ -54,7 +53,6 @@ nav a:hover {
     color: var(--bg-dark);
 }
 
-/* Hero */
 .hero {
     padding: 2px 2px;
     text-align: center;
@@ -74,7 +72,6 @@ nav a:hover {
     color: var(--text-secondary);
 }
 
-/* Secciones */
 main {
     flex: 1;
     padding: 40px 20px;
@@ -184,7 +181,7 @@ footer {
 }
 
 .logo {
-  max-width: 250px; /* antes era 200px */
+  max-width: 250px;
   height: auto;
   margin-bottom: 2px;
 }
