@@ -29,6 +29,7 @@ body {
         var(--bg);
     color: var(--text);
     letter-spacing: 0;
+    overflow-x: hidden;
 }
 
 body::before {
@@ -635,12 +636,18 @@ footer p {
 
     main {
         width: min(100% - 24px, var(--max));
-        padding-top: 18px;
+        padding: 16px 0 46px;
     }
 
-    .hero-home,
+    .hero-home {
+        padding: 24px 20px 30px;
+    }
+
     .page-hero {
-        padding: 26px 20px;
+        padding: 24px 20px 28px;
+        min-height: auto;
+        justify-content: flex-start;
+        margin-bottom: 28px;
     }
 
     .hero h1,
@@ -650,7 +657,9 @@ footer p {
 
     .hero-text,
     .page-hero p:not(.eyebrow) {
+        margin-top: 16px;
         font-size: 1rem;
+        line-height: 1.55;
     }
 
     .hero-actions,
@@ -664,18 +673,49 @@ footer p {
     }
 
     .metrics {
-        margin-bottom: 48px;
+        margin: 16px 0 42px;
+    }
+
+    .metrics article {
+        padding: 20px;
     }
 
     .section {
-        padding-bottom: 50px;
+        padding: 10px 0 44px;
+    }
+
+    .section-heading {
+        margin-bottom: 22px;
     }
 
     .feature-card {
         min-height: auto;
+        padding: 22px;
+    }
+
+    .card-number {
+        margin-bottom: 22px;
     }
 
     .story-panel {
         min-height: 280px;
+    }
+
+    .story-copy p {
+        font-size: 1rem;
+        line-height: 1.68;
+    }
+
+    .values-strip span {
+        padding: 16px;
+    }
+
+    form,
+    .contact-panel {
+        padding: 22px;
+    }
+
+    .contact-link {
+        min-height: 58px;
     }
 }
