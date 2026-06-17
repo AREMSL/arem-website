@@ -2,63 +2,69 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - AREM Servicios S.L</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contacta con AREM Servicios S.L. para solicitar seguridad en eventos, servicios operativos o apoyo de seguridad vial." />
+    <title>Contacto | AREM Servicios S.L</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="site-header">
+        <nav class="nav-shell" aria-label="Navegación principal">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Quiénes Somos</a></li>
+                <li><a href="about.html">Quiénes somos</a></li>
                 <li><a href="services.html">Servicios</a></li>
-                <li><a href="seguridad-vial.html">Seguridad Vial</a></li>
-                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="seguridad-vial.html">Seguridad vial</a></li>
+                <li><a class="active" href="contact.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="hero">
-            <img src="images/logo.png" alt="Logo AREM" class="logo" />
-            <h2>Protegemos lo que más valoras</h2>
-            <p>Expertos en seguridad corporativa</p>
-        </section>
-        <section class="features">
-            <p>Puedes contactarnos a través del siguiente formulario o por nuestras redes sociales</p>
-			<br>
-            <form action="https://formsubmit.co/arem.website@gmail.com" method="POST">
-                <input type="hidden" name="_next" value="gracias.html">
-                <label for="nombre">Nombre completo:<br>
-                    <input type="text" name="nombre" id="nombre" required>
-                </label><br><br>
-                <label for="email">Email:<br>
-                    <input type="email" name="email" id="email" required>
-                </label><br><br>
-                <label for="mensaje">Describe tu petición:<br>
-                    <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
-                </label><br><br>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-        <div class="contact-links">
-        <a href="tel:+34683225263" class="contact-link">
-            <img src="images/phone.png" alt="Teléfono" class="icon" />
-            +34 683 225 263
-        </a>
-        <a href="https://www.instagram.com/arem_servicios/?__d=1%252F" target="_blank" class="contact-link">
-            <img src="images/instagram.png" alt="Instagram" class="icon" />
-            Instagram
-        </a>
-        <a href="https://www.facebook.com/aremservi/" target="_blank" class="contact-link">
-            <img src="images/facebook.png" alt="Facebook" class="icon" />
-            Facebook
-        </a>
-</div>
 
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">Contacto</p>
+            <h1>Cuéntanos qué necesitas proteger.</h1>
+            <p>Te responderemos para valorar el servicio, el entorno y el equipo más adecuado.</p>
+        </section>
+
+        <section class="contact-layout">
+            <form action="https://formsubmit.co/arem.website@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://www.aremservicios.es/gracias.html" />
+                <input type="hidden" name="_subject" value="Nueva solicitud desde AREM Servicios S.L" />
+                <input type="hidden" name="_template" value="table" />
+
+                <label for="nombre">Nombre completo</label>
+                <input type="text" name="name" id="nombre" autocomplete="name" required />
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" autocomplete="email" required />
+
+                <label for="mensaje">Describe tu petición</label>
+                <textarea name="message" id="mensaje" rows="6" required></textarea>
+
+                <button type="submit">Enviar solicitud</button>
+            </form>
+
+            <aside class="contact-panel" aria-label="Datos de contacto">
+                <h2>Contacto directo</h2>
+                <a href="tel:+34683225263" class="contact-link">
+                    <img src="images/phone.png" alt="" class="icon" />
+                    +34 683 225 263
+                </a>
+                <a href="https://www.instagram.com/arem_servicios/?__d=1%252F" target="_blank" rel="noopener" class="contact-link">
+                    <img src="images/instagram.png" alt="" class="icon" />
+                    Instagram
+                </a>
+                <a href="https://www.facebook.com/aremservi/" target="_blank" rel="noopener" class="contact-link">
+                    <img src="images/facebook.png" alt="" class="icon" />
+                    Facebook
+                </a>
+            </aside>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 AREM Servicios S.L. Todos los derechos reservados.</p>
+        <p>&copy; 2026 AREM Servicios S.L. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
