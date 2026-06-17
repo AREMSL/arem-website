@@ -598,28 +598,39 @@ footer p {
 
 @media (max-width: 680px) {
     .site-header {
-        position: static;
-        padding: 12px;
+        position: sticky;
+        padding: 10px 0;
     }
 
     .nav-shell {
         align-items: center;
+        width: 100%;
     }
 
     .nav-shell ul {
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-content: flex-start;
+        flex-wrap: nowrap;
         gap: 8px;
+        overflow-x: auto;
+        padding: 0 12px 2px;
+        scroll-padding-inline: 12px;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .nav-shell ul::-webkit-scrollbar {
+        display: none;
     }
 
     .nav-shell ul a {
         justify-content: center;
-        width: 100%;
+        flex: 0 0 auto;
         min-height: 42px;
-        padding: 0 10px;
+        padding: 0 14px;
         font-size: 0.86rem;
         text-align: center;
+        white-space: nowrap;
     }
 
     main {
